@@ -9,8 +9,6 @@ If you find this project helpful, please don't forget to give it a ⭐ Star to s
 ## Introduction
 GCGNet, a Graph-Consistent Generative Network aims to robustly ensure that the temporal and channel correlations between predicted future endogenous variables and known historical endogenous, exogenous, and future exogenous variables are consistent with those of the true future endogenous variables. This consistency helps improve prediction accuracy. 
 
-Specifically, we first use a Variational Generator module to produce a coarse prediction. A Graph Discriminator module then guides the generator by evaluating the consistency between the generated and true relational structures. The relational structures, produced by the Graph VAE module, are represented as graphs and are robust to noise. Finally, a Graph Refiner module prevents potential degeneration in the discriminator and improves the initial predictions by leveraging the learned relational structures.
-
 <div align="center">
 <img alt="Logo" src="docs/figures/main.png" width="100%"/>
 </div>
